@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,20 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Title</title>
     {% load static%}
-    <link rel="stylesheet" href="{% static './main-style.css' %}">
+    <link rel="stylesheet" href="{% static 'main-style.css' %}">
     <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
     <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
     <link href="{% static 'https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap' %}" rel="stylesheet">
 </head>
-<h1> This is Vineela Mukkamala...</h1>
-<body class="full super-center-grid">
-    <div class="super-center-grid main-layout default-shadow">
-        <h1>HelloWorld</h1>
-        <a href="indexinterval.html">Javascript setInterval</a>
-        <a href="indexbutton.html">Javascript button</a>
-        <a href="indexname.html">Javascript button2</a>
-    </div>
 
+<body class="full super-center-grid ">
+
+    <div class="super-center-grid main-layout default-shadow">
+        <h1>Timer</h1>
+        <h1 id="time">-</h1>
+    </div>
 </body>
+<script src="{% static 'intervalapp.js' %}"></script>
 
 </html>

@@ -20,7 +20,10 @@ import teammate.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('new/', new.views.index, name='index'),
-    path('teammate/', teammate.views.index, name='index')
+    path('teammate/', teammate.views.index, name='index'),
+    path('new/indexname.html',new.views.name,name='name'),
+    path('new/indexinterval.html',new.views.interval,name='interval'),
+    path('new/indexbutton.html',new.views.button,name='button'),
 ]
 
 
